@@ -1,9 +1,11 @@
+//import morgan from "morgan" // para mostrar ao desenvolvedor os logs de acesso à API.
+
 import express from "express"; // nova forma padrão do ESMscript para importar no nodejs
-import morgan from "morgan" // para mostrar ao desenvolvedor os logs de acesso à API.
 //require('dotenv').config();
+import logger from '../src/middlewares/logger'
 
 const app = express();
-app.use(morgan("combined"));
+app.use(logger("tiny"));
 
 const PORT = process.env.PORT || 8855;
 
