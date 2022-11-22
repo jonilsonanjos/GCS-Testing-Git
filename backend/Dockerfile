@@ -10,6 +10,6 @@ RUN npm install
 #Abaixo, diretório host(.) e diretório do container(.)
 COPY . . 
 
-EXPOSE 4567
+EXPOSE 8855
 
 CMD ["npm","start"]
