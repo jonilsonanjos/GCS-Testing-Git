@@ -13,5 +13,5 @@ app.use(routes);
 const PORT = process.env.PORT || 8855;
 
 app.listen(PORT, ()=>{
-    console.log("API rotando na porta "+PORT);
+    console.log("API rodando na porta "+PORT);
 });
