@@ -1,0 +1,11 @@
+name: Hello world
+on: [pull_request]
+jobs:
+  job-1:
+   runs-on: ubuntu-latest
+   steps:
+     - name: Print hello world
+       run: echo Hello World!
+     - name: Executa Ls /
+       run: ls /
+        
