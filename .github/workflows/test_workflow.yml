@@ -1,1 +1,11 @@
 
+name: Hello world
+on: [workflow_dispatch]
+jobs:
+  job-1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print hello world
+        run: echo Hello World!
+      - name: Executa Ls /
+        run: ls /
