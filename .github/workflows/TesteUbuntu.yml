@@ -2,17 +2,8 @@ name: Testando Ubuntus
 on: [workflow_dispatch]
 jobs:
    job-1:
-   runs-on: ubuntu-18.04
+   runs-on: [ubuntu-18.04,ubuntu-20.04,ubuntu-22.04]
    steps:
      - name: Teste
        run: npm teste
-   job-2:
-   runs-on: ubuntu-20.04
-   steps:
-     - name: Teste
-       run: npm teste
-   job-3:
-   runs-on: ubuntu-22.04
-   steps:
-     - name: Teste
-       run: npm teste    
+   
