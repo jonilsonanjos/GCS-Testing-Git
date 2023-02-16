@@ -1,0 +1,8 @@
+name: Imprime nomes da equipe
+on: [pull_request]
+jobs:
+  job-1:
+   runs-on: ubuntu-latest
+   steps:
+     - name: Imprime nomes
+       run: echo Brendo Silva, Jonilson Coelho!
